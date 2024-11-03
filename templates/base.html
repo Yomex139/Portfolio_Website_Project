@@ -14,13 +14,14 @@
             <a class="navbar-brand" href="{{ url_for('home') }}">Home</a>
             <a class="navbar-brand" href="{{ url_for('about') }}">About</a>
             <a class="navbar-brand" href="{{ url_for('projects') }}">Projects</a>
+            <a class="navbar-brand" href="{{ url_for('contact') }}">Contacts</a>
         </nav>
     </header>
     <main class="container mt-4">
         {% block content %}{% endblock %}
     </main>
     <footer class="text-center py-3 bg-light">
-        <p>2024 My Portfolio</p>
+        <p>{{ dt.date.today().year }} My Portfolio</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
